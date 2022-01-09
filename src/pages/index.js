@@ -5,9 +5,15 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+console.log(process.env.API_KEY)
+console.log(process.env.GATSBY_API_KEY)
+
 const IndexPage = () => (
+
   <Layout>
     <Seo title="Home" />
+  {process.env.API_KEY},
+  {process.env.GATSBY_API_KEY}
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

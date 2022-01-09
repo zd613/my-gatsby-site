@@ -1,3 +1,7 @@
+// require('dotenv').config({
+//   path:`.evn.${process.env.NODE_ENV}`
+// })
+console.log(process.env.API_KEY)
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
